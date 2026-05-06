@@ -1,4 +1,6 @@
 import movies from "./data/movies";
+import { useState } from "react";
+
 
 function App() {
   return <div className="card m-5 px-5 py-3">
