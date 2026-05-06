@@ -1,5 +1,6 @@
 import movies from "./data/movies";
 import { useState } from "react";
+import { useEffect } from "react";
 
 
 
