@@ -54,7 +54,7 @@ function App() {
       className="form-select"
       aria-label="Default select">
       {/** questa option sara'da collegare allo state di partenza */}
-      <option value={selectOptionValue}>Scegli il genere</option>
+      <option value="Scegli il genere">Scegli il genere</option>
       <option value="Fantascienza">Fantascienza</option>
       <option value="Thriller">Thriller</option>
       <option value="Romantico">Romantico</option>
