@@ -3,17 +3,19 @@ import movies from "./data/movies";
 function App() {
   return <div className="card m-5 px-5 py-3">
     <h5 className="card-title my-4">Cosa guardiamo stasera?</h5>
-    <select className="form-select" aria-label="Default select">
-      <option selected>Scegli il genere</option>
+    <select name="pickMovie" className="form-select" aria-label="Default select">
       <option value="Fantascienza">Fantascienza</option>
       <option value="Thriller">Thriller</option>
       <option value="Romantico">Romantico</option>
       <option value="Azione">Azione</option>
     </select>
-    <ul>
-      
+    <ul className="py-3">
+      {movies.map((movie) => {
+        return <li key={movie.id}>
+          {movie.title}
+        </li>
+      })}
     </ul>
-    
-  </div>;
+  </div>
 }
 export default App;
