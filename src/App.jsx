@@ -8,15 +8,11 @@ function App() {
   sara'il valore che vediamo preselezionato */}
   const [selectOptionValue, setSelectOptionValue] = useState("Scegli il genere");
 
-  }
+  
   return <div className="card m-5 px-5 py-3">
     <h5 className="card-title my-4">Cosa guardiamo stasera?</h5>
-    <select
-      name="pickMovie"
-      onChange={(e) => setSelectOptionValue(e.target.value)} {/** quando cambia
-        settami lo state su 1 e dai come value quello di elem che ha triggerato evento */}
-      className="form-select"
-      aria-label="Default select">
+    {/** quando cambia settami lo state su 1 e dai come value quello di elem che ha triggerato evento */}
+    <select name="pickMovie" onChange={(e) => setSelectOptionValue(e.target.value)}  className="form-select" aria-label="Default select">
       {/** questa option sara'da collegare allo state di partenza */}
       <option value={selectOptionValue}>Scegli il genere</option>
       <option value="Fantascienza">Fantascienza</option>
