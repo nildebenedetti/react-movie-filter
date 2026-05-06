@@ -49,6 +49,7 @@ function App() {
     {/** quando cambia settami lo state su 1 e dai come value quello di elem che ha triggerato evento */}
     <select
       name="pickMovie"
+      defaultValue={selectOptionValue}
       onChange={(e) => setSelectOptionValue(e.target.value)}
       className="form-select"
       aria-label="Default select">
@@ -62,6 +63,9 @@ function App() {
     <ul className="py-3">
       {renderPlainList(movies)}
     </ul>
+    <p>
+      {`Il valore di ${selectOptionValue} e ${JSON.stringify.setSelectOptionValue}`}
+    </p>
   </div>
 }
 export default App;
